@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+<head>
+  <script>
+    function valid()
+    { 
+      var phoneno=document.getElementById("z").value;
+      
+      if(phoneno.length<10)
+            {
+              window.alert("number is invalid");
+         return false;
+            }
+          if(isNaN(phoneno))
+            {
+            window.alert("not a number");
+            return false;
+            }
+            var k=phoneno.charAt(0);
+            if(k!=9)
+            {
+              window.alert("number must start with 9");
+            return true;
+            }
+    }
+    function ret()
+    {
+      history.go(-1);
+    }
+    
+  </script>
+<title> REGISTRATION</title>
+<link rel="stylesheet" type="text/css" href="1.css">
+</head>
+<body id="m" alink="tomato">
+<form >
+<center>
+<fieldset id="p">
+<legend > REGISTRATION FORM</legend>
+
+
+<label>FIRST NAME:<input type="text" placeholder="name"   height="10" size="30"><br><br></label>
+<label >MIDDLE NAME:<input id="g" type="text" placeholder="name"   height="10" size="30"><br><br></label>
+<label >LAST NAME:</label><input id="a" type="text" placeholder="name"   height="10" size="30"><br><br>
+<label >ROLL NO:</label><input id="b" type="rollno" placeholder="password" size="30"><br><br>
+<label >E-MAIL:</label><input id="y" type="text" placeholder="re-Enter"   height="10" size="30" ><br><br>
+<label id="c">GENDER:</label> <input  type="radio" name="male" value="male"> male   <input type="radio" name="male" value="female">female<br><br>
+<label>PHONE NO:
+<select>
+    <option value="+91">+91</option>
+    <option value="+46">+46</option>
+    <option value="+84">+84</option>
+    <option value="+1">+1</option>
+  </select>  <input type="text" placeholder="phone no" id="z"  height="10" size="30" onblur="return valid();"><br><br></label>        
+<br><label >PASSWORD:</label><input id="d" type="password" placeholder="Enter your password"   height="10" size="30"><br><br>
+<label >RE-ENTER PASSWORD:</label><input id="e" type="password" placeholder="re-Enter"   height="10" size="30"><br><br>
+
+<strong><input type="submit" value="register" onclick="ret();"></strong><br>
+
+</fieldset>
+</center>
+</form>
+</body>

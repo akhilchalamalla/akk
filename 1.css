@@ -1,0 +1,29 @@
+#p
+{
+width:500px;
+height:500px;
+background-image: url("");
+ background-size:600px 600px;
+ background-color: white;
+}
+#n{
+color:red;
+text-decoration:none;
+}
+#m{
+background-image:url("reg.jpg");
+background-repeat:no-repeat;
+background-size:1500px 1000px;
+}
+#g{
+    margin-right: -20px;
+}
+#a{
+    margin-right: -2px;
+}
+#b{
+    margin-right: 20px;
+}
+#c{
+    margin-left: -117px;
+}

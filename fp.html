@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+    <head>
+  <script>
+    function ver()
+    {
+      var pass=document.getElementById("f").value;
+      var len=pass.length;
+      if(len>9)
+      {
+          if((document.getElementById("f").value)==(document.getElementById("e").value))
+           { 
+           document.getElementById("q").innerHTML="<b><center>your password has been changed</center><b>";
+           }
+           else
+           {
+           alert("passwords does not matched");
+            }
+      }
+      else
+      {
+       alert("password must be min 10 chars")
+      }
+    }
+  </script>
+
+<title> FORGOT PASSWORD</title>
+<link rel="stylesheet" type="text/css" href="fp.css">
+</head>
+<center>
+<body id="m" alink="tomato">
+<form id="c">
+    <img id="d" src="done.jpg" alt="think" width="300" height="300">
+    <fieldset>
+      
+<label >ENTER NEW PASSWORD:</label><input id="f" type="password" placeholder="Enter your password"   height="10" size="30"><br><br>
+  <label >RE-ENTER PASSWORD:</label><input id="e" type="password" placeholder="re-Enter"   height="10" size="30"><br><br>
+<strong><input type="button" value="submit" onclick="ver()"></strong><br>
+<div id="q">
+
+</div>
+</fieldset>
+</center>
+</form>
+</body>
+</html>

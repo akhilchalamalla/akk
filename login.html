@@ -1,0 +1,92 @@
+<!doctype html>
+<html>
+<head>
+<title> login form</title>
+<link rel="stylesheet" type="text/css" href="login.css">
+<style>
+#p{
+        border-radius: 0px 0px 25px 25px;
+        border: 0px;
+}
+table{
+background-color:black;
+width: 609px;
+border-radius: 25px 25px 0px 0px;
+position: absolute;
+margin-left: 456px;
+    top: 50px;
+}
+h3{
+color: white;
+
+
+}
+
+</style>
+</head>
+
+<body id="m"  >
+
+
+
+       
+        <script type="text/javascript">
+        function valid()
+        {
+         var uname=document.getElementById("e").value;
+         var x=uname.length;
+         while (x < 10) 
+         {
+         window.alert("enter min 10 chars");
+         
+         var uname=document.getElementById("e").value;
+         var x=uname.length;
+         }
+         e.focus();
+        }
+        function sub()
+        {
+         var uname=document.getElementById("z").value;
+         var x=uname.length;
+         if (x < 10) 
+         {
+         window.alert("password mus be min 10 chars");
+         document.getElementById("z").value=" ";
+         
+         }
+          var uname=document.getElementById("e").value;
+         var y=uname.length;
+         if (y == 0) 
+         {
+         window.alert("enter rollno");
+         }     
+        if(x>=10 && y!=0)
+        {
+                confirm("you are successfully loggedin")
+        }
+        }
+        
+
+         </script>
+<center>
+
+       
+<center>  <table><tr><td> <h3 align=center>LOGIN FORM </h3></td></tr></table> </center>
+      <form name="f1" id="q" >
+                <fieldset id="p">
+                        <br><br><br>
+       <srtong>ROLLNO             :   </srtong><input type="text" placeholder="             rollno" name="a" id="e" size="57" onchange="valid()" required><br><br>
+PASSWORD         :
+   <input type="password" placeholder="             password" id="z"     height="31px" size="57" onchange="sub()" required><br><br>
+<input type="submit" value="SIGN IN" id="k" ><br><br>
+if you don't have an account? <a id="n" href="1.html">register</a>	
+<br>
+<a href="2.html" >Forgot Password?</a>
+<div id="l">
+
+</div>
+</center>
+</fieldset>
+</form>
+
+</body>

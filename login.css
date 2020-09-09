@@ -1,0 +1,38 @@
+
+#p{
+width:587px;
+height:323px;
+background-image:url("");
+ background-size:600px 600px;
+ margin-top: 120px;
+ background-color:white;
+}
+#n{
+color:red;
+text-decoration:none;
+}
+#m{
+background-image:url("reg1.jpg");
+background-repeat:no-repeat;
+background-size:1500px 1000px;
+}
+#e{
+    border-radius: 20px;
+    height: 33px;
+    background-color:lightgrey;
+}
+#z{
+    border-radius: 20px;
+    height: 33px;
+    background-color:lightgrey;
+}
+#k{
+    border-radius: 20px;
+    height: 33px;
+    
+}
+input[type="submit" ]:hover
+{
+    background-color:rgb(26, 212, 66);
+    color: rgba(10, 5, 5, 0.575);
+}

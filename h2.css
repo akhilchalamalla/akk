@@ -1,0 +1,16 @@
+body {
+    width: 306px;
+    height: 277px;
+    border: 12px solid green;
+    padding: 50px;
+    margin: 10px;
+    background-image: url("https://img1.akspic.com/image/113613-black_and_white-android-pattern-design-geometry-2560x1440.jpg?attachment=1");
+
+
+  }
+#l,#m,#n,#d,#o{
+  color: aliceblue;
+  border: 2px solid;
+  padding: 5px;
+  margin-left: 84px;
+}

@@ -1,0 +1,17 @@
+.sp{
+	padding: 0px 100px ;
+}
+#m{
+	padding: 0px 80px;
+
+}
+body {
+	background-image:url("home.jpg");
+	
+	background-position:center;
+  width: 957px;
+  height:314px;
+  border: 15px solid purple;
+  padding: 30px;
+  margin: 11px;
+}
